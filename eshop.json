@@ -1,0 +1,50 @@
+{
+  "product": [
+    {
+      "name": "Toothbrush",
+      "price": "10kr",
+      "image": "https://placeimg.com/640/480/any?t=1580062955891"
+    },
+    {
+      "name": "Paper",
+      "price": "40kr",
+      "image": "https://placeimg.com/640/480/any?t=1580065088391"
+    },
+    {
+      "name": "Cup",
+      "price": "80kr",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "name": "Bowl",
+      "price": "30kr",
+      "image": "https://placeimg.com/640/480/any?t=1580065152209"
+    },
+    {
+      "name": "Glasses",
+      "price": "500kr",
+      "image": "https://placeimg.com/640/480/any?t=1580069629256"
+    },
+    {
+      "name": "Chair",
+      "price": "700kr",
+      "image": "https://placeimg.com/640/480/any?t=1580071060529"
+    },
+    {
+      "name": "watch",
+      "price": "900kr",
+      "image": "https://placeimg.com/640/480/any?t=1580140444399"
+    },
+    {
+      "name": "Keychain",
+      "price": "90kr",
+      "image": "https://placeimg.com/640/480/any?t=1580285200217"
+    },
+    {
+      "name": "Banana",
+      "price": "90kr",
+      "image": "https://placeimg.com/640/480/any?t=1580290533055"
+    }
+  ],
+  "cart": []
+}
