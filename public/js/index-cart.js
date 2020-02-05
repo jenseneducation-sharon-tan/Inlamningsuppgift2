@@ -78,9 +78,10 @@ const appendCartData = cart => {
     });
 
     /////////// Wrap properties of name, price, image and button in a div ////////
-    div.append(imageElem);
+
     div.append(nameElem);
     div.append(priceElem);
+    div.append(imageElem);
     div.append(deleteButton);
   }
 };

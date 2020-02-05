@@ -47,9 +47,33 @@ nav {
 }
 
 a {
-  font-size: 50px;
+  text-decoration: none;
+}
 
-  padding: 30px;
+.add-item:hover,
+.add-item:focus,
+.delete-item:hover,
+.delete-item:focus {
+  background-color: rgb(134, 133, 133);
+}
+
+.add-item {
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px;
+  width: 50%;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px gray;
+}
+
+.block {
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 10px;
+  width: 50%;
+  align-self: center;
+  border-radius: 10px;
 }
 
 /* //////////////////////////// Index page ///////////////////////////// */
@@ -63,14 +87,14 @@ a {
   text-align: center;
 }
 
-#pageIndex .welcome {
+.welcome {
   font-size: 80px;
   color: palevioletred;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-#pageIndex .joy {
+.joy {
   font-size: 80px;
   margin: 0;
   color: white;
@@ -86,6 +110,13 @@ a {
   height: 100px;
 }
 
+#pageIndex a {
+  font-size: 50px;
+  text-decoration: none;
+  padding: 30px;
+  color: purple;
+}
+
 #pageIndex button {
   box-shadow: 3px 4px 0px 0p rgb(252, 106, 150);
   background: linear-gradient(
@@ -97,7 +128,6 @@ a {
   border: 1px solid white;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
   font-family: Arial;
   font-size: 17px;
   padding: 7px 25px;
@@ -117,6 +147,7 @@ a {
 
   background-color: rgb(241, 90, 135);
 }
+
 #pageIndex button:active {
   position: relative;
   top: 1px;
@@ -130,37 +161,24 @@ a {
   background-color: black;
 }
 
-#pageProduct header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 30px;
-  background-color: #202020;
-  margin: 0;
-}
-
-#pageProduct nav {
-  padding: 20px;
-}
-
-#pageProduct a {
+#pageProduct #pageShoppingCart,
+a {
   font-size: 50px;
   color: palevioletred;
   padding: 30px;
 }
 
-#pageProduct #product-list {
+#product-list {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: 550px;
   align-items: stretch;
   padding: 30px 50px;
-
   font-family: "Lato", sans-serif;
 }
 
-#pageProduct .product {
+.product {
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -168,33 +186,17 @@ a {
 }
 
 #pageProduct p {
-  margin: 5px 0 5px 15px;
+  margin: 10px 0px 10px 20px;
+
   color: white;
 }
 
-#pageProduct .image-product {
-  width: 100%;
+.image-product {
+  width: 90%;
   height: 70%;
-  padding: 10px;
-  border: solid white 1px;
-}
+  margin-left: 20px;
 
-.add-item {
-  margin-top: 20px;
-  font-size: 15px;
-  padding: 10px;
-  width: 50%;
-  align-self: center;
-  border-radius: 10px;
-}
-
-.block {
-  margin-top: 20px;
-  font-size: 15px;
-  padding: 10px;
-  width: 50%;
-  align-self: center;
-  border-radius: 10px;
+  border: white solid 5px;
 }
 
 /* ///////////////////// Shopping cart ////////////////////////// */
@@ -205,59 +207,42 @@ a {
   background-color: black;
 }
 
-a {
-  text-decoration: none;
-}
-
-#pageShoppingCart header {
+#cart-list {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 30px;
-  background-color: #202020;
-  margin: 0;
-}
-
-#pageShoppingCart nav {
-  padding: 20px;
-}
-
-#pageShoppingCart a {
-  font-size: 50px;
-  color: palevioletred;
-  padding: 30px;
-}
-
-#pageShoppingCart #cart-list {
-  display: inline-block;
-  align-items: center;
-  flex-direction: wrap;
-  justify-content: center;
-  padding: 60px;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-#pageShoppingCart .cart {
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  border: white 2px solid;
-  margin: 80px;
+  flex-wrap: wrap;
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
-  max-width: 1200px;
-  width: 35%;
-  height: 50%;
 }
 
-#pageShoppingCart img {
+.cart {
+  width: 500px;
+  height: 620px;
+  margin: 40px;
+
+  border: solid 2px white;
+}
+
+.image-cart {
   width: 90%;
-  height: 300px;
+  height: 70%;
+  border: solid 5px white;
+  margin-left: 25px;
+}
+.delete-item {
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 150px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px gray;
 }
 
-#pageProduct .delete-item {
-  width: 30%;
-  height: 40%;
+#pageShoppingCart p {
+  color: white;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-bottom: 10px;
 }
